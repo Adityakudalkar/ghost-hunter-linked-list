@@ -1,0 +1,7 @@
+*.o
+*.obj
+*.exe
+ghost_hunter
+.vscode/
+build/
+bin/
