@@ -1,8 +1,9 @@
 #ifndef GAME_HPP
 #define GAME_HPP
 
-#include "Room.hpp"       // Fix: Direct reference to Room struct
+#include "Room.hpp"
 #include "LinkedList.hpp"
+#include "UI.hpp" // Integrated UI class
 
 class Game {
 private:
