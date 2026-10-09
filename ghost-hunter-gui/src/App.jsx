@@ -123,7 +123,6 @@ export default function App() {
         👻 GHOST HUNTER: LINKED LIST GUI
       </h1>
 
-      {/* Linked List Nodes */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', overflowX: 'auto', maxWidth: '100%', padding: '1.5rem', backgroundColor: '#111827', borderRadius: '1rem', border: '1px solid #1f2937', marginBottom: '2rem' }}>
         {rooms.map((room, idx) => (
           <React.Fragment key={room.id}>
@@ -152,14 +151,12 @@ export default function App() {
         ))}
       </div>
 
-      {/* Status Output */}
       {scanMessage && (
         <div style={{ backgroundColor: '#111827', border: '1px solid #374151', color: '#d8b4fe', padding: '0.75rem 1.5rem', borderRadius: '0.75rem', marginBottom: '1.5rem', textAlign: 'center' }}>
           {scanMessage}
         </div>
       )}
 
-      {/* Game State Messages */}
       {gameState === 'WON' && (
         <div style={{ backgroundColor: '#064e3b', color: '#a7f3d0', padding: '1rem 2rem', borderRadius: '1rem', marginBottom: '1.5rem', fontSize: '1.25rem', fontWeight: 'bold' }}>
           🏆 YOU CAPTURED THE GHOST! YOU WIN!
@@ -171,7 +168,6 @@ export default function App() {
         </div>
       )}
 
-      {/* Controls */}
       <div style={{ backgroundColor: '#111827', padding: '1.5rem', borderRadius: '1rem', border: '1px solid #1f2937', width: '100%', maxWidth: '500px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem', color: '#d1d5db', fontWeight: '600' }}>
           <span>📍 Location: <strong style={{ color: '#34d399' }}>{rooms[playerIdx]?.name}</strong></span>
